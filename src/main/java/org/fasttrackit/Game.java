@@ -137,21 +137,37 @@ public class Game {
         System.out.println(pet.getName() + "likes " + pet.getFavouriteActivity());
     }
 
-    private void requireFeeding() {
-        System.out.println("Please pick a food type to feed your pet from the list or type in your favorite food.");
+//    private void requireFeeding() {
+//        System.out.println("Please pick a food type to feed your pet from the list or type in your favorite food.");
+//
+//        displayFood();
+//        Scanner scanner = new Scanner(System.in);
+//        String userInputFood = scanner.nextLine();
+//
+//        AnimalFood AnimalFood = new AnimalFood();
+//        displayFood();
+//        AnimalFood.setName(userInputFood);
+//        availableFood.add(AnimalFood);
+//
+//        System.out.println("You have picked: " + userInputFood);
+//        rescuer.feeding(pet, AnimalFood);
+//
+//    }
 
-        displayFood();
+//    require feeding original mai sus, testez o varianta noua jos
+
+    private void requireFeeding(){
+        System.out.print("You can now feed your animal with the following foods or other: ");
+        for(int i = 0; i <availableFood.size(); i++){
+            System.out.print(availableFood.get(i).getName() + " ");
+        }
+        AnimalFood animalFood= new AnimalFood();
+        System.out.println("Please select a food type.");
         Scanner scanner = new Scanner(System.in);
-        String userInputFood = scanner.nextLine();
-
-        AnimalFood AnimalFood = new AnimalFood();
-        displayFood();
-        AnimalFood.setName(userInputFood);
-        availableFood.add(AnimalFood);
-
-        System.out.println("You have picked: " + userInputFood);
-        rescuer.feeding(pet, AnimalFood);
-
+        String selectedFood = scanner.nextLine();
+        animalFood.setName(selectedFood);
+        System.out.println("You have picked: " + animalFood.getName());
+        rescuer.feeding(pet, animalFood);
     }
 
 
