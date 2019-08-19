@@ -1,4 +1,6 @@
-package org.fasttrackit;
+package org.fasttrackit.domain;
+
+import org.fasttrackit.domain.Dog;
 
 public class Cat extends Dog {
 

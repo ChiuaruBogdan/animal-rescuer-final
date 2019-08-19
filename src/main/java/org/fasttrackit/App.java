@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
 
+import org.fasttrackit.domain.Cat;
+import org.fasttrackit.domain.Dog;
+
 import java.time.LocalDateTime;
 
 /**

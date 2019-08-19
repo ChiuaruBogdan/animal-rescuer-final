@@ -2,8 +2,6 @@ package org.fasttrackit;
 
 //inheritance or "is-a" relationship cu Person
 
-import java.util.Objects;
-
 public class Rescuer extends Person {
 
     private String nickname;
@@ -31,25 +29,7 @@ public class Rescuer extends Person {
     }
 
 
-    // mai jos sunt cele doua metode de "feeding" si "recreation"
-//    feeding original mai jos
 
-//    public void feeding(Pet pet, AnimalFood animalFood) {
-//
-//            System.out.println(pet.getName() + "'s current hunger level is " + pet.getHungerLevel());
-//            if (pet.getFavouriteFood().equals(animalFood.getName())) {
-//                pet.happinessLevel++;
-//                System.out.println(" Now the mood level is: " + pet.getHappinessLevel());
-//            } else {
-//                System.out.println("The pet wants his favorite food");
-//
-////        System.out.println(pet.getName() + "'s initial hunger level is: " + pet.getHungerLevel());
-//                pet.hungerLevel--;
-//                System.out.println(getName() + " just gave some " + animalFood.getName() + " to " + pet.getName() +
-//                        " and the hunger level is now: " + pet.getHungerLevel());
-//            }
-
-//    feeding inspirat de la  mihai
 
     public void feeding(Pet pet, AnimalFood animalFood) {
         System.out.println(getName() + " is giving some " + animalFood.getName() + " food" + " to " + pet.getName());

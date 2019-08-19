@@ -14,6 +14,7 @@ public class Pet {
     private int energy;
     private String breed;
     private String gender;
+    private long id;
 
 
     public Pet(String name, String type, int age, String breed, String gender) {
@@ -132,4 +133,11 @@ public class Pet {
     }
 
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getId() {
+        return id;
+    }
 }

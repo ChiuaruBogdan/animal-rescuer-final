@@ -2,45 +2,18 @@ package org.fasttrackit.domain;
 
 public class Pet {
 
-    private long id;
     private String name;
     private int age;
     private int health;
-    private int hungerLevel;
-    private int happinessLevel;
+    int hungerLevel;
+    int happinessLevel;
     private String favouriteFood;
     private String favouriteActivity;
     private String type;
     private int energy;
     private String breed;
     private String gender;
-
-
-    @Override
-    public String toString() {
-        return "Pet{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", health=" + health +
-                ", hungerLevel=" + hungerLevel +
-                ", happinessLevel=" + happinessLevel +
-                ", favouriteFood='" + favouriteFood + '\'' +
-                ", favouriteActivity='" + favouriteActivity + '\'' +
-                ", type='" + type + '\'' +
-                ", energy=" + energy +
-                ", breed='" + breed + '\'' +
-                ", gender='" + gender + '\'' +
-                '}';
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
+    private long id;
 
     public String getName() {
         return name;
@@ -129,4 +102,31 @@ public class Pet {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", health=" + health +
+                ", hungerLevel=" + hungerLevel +
+                ", happinessLevel=" + happinessLevel +
+                ", favouriteFood='" + favouriteFood + '\'' +
+                ", favouriteActivity='" + favouriteActivity + '\'' +
+                ", type='" + type + '\'' +
+                ", energy=" + energy +
+                ", breed='" + breed + '\'' +
+                ", gender='" + gender + '\'' +
+                ", id=" + id +
+                '}';
+    }
+
 }
