@@ -95,11 +95,11 @@ public class Game {
         System.out.println("Please pick an animal to rescue: (Dog or Cat)");
         Scanner scanner = new Scanner(System.in);
         String pickedAnimal = scanner.nextLine();
-        if (pickedAnimal.equals("dog")) {
+        if (pickedAnimal.equalsIgnoreCase("dog")) {
             System.out.println("You picked to rescue a: " + pickedAnimal);
             pet = new Dog();
         } else {
-            if (pickedAnimal.equals("cat")) {
+            if (pickedAnimal.equalsIgnoreCase("cat")) {
                 System.out.println("You picked to rescue a: " + pickedAnimal);
                 pet = new Cat();
             } else {
@@ -140,24 +140,7 @@ public class Game {
         System.out.println(pet.getName() + "likes " + pet.getFavouriteActivity());
     }
 
-//    private void requireFeeding() {
-//        System.out.println("Please pick a food type to feed your pet from the list or type in your favorite food.");
-//
-//        displayFood();
-//        Scanner scanner = new Scanner(System.in);
-//        String userInputFood = scanner.nextLine();
-//
-//        AnimalFood AnimalFood = new AnimalFood();
-//        displayFood();
-//        AnimalFood.setName(userInputFood);
-//        availableFood.add(AnimalFood);
-//
-//        System.out.println("You have picked: " + userInputFood);
-//        rescuer.feeding(pet, AnimalFood);
-//
-//    }
 
-//    require feeding original mai sus, testez o varianta noua jos
 
     private void requireFeeding(){
         System.out.print("You can now feed your animal with the following foods or other: ");
@@ -189,34 +172,6 @@ public class Game {
 
 }
 
-
-//    mai jos e versiunea originala de requireActivity
-
-//        private void requireActivity(){
-//        displayActivities();
-//            System.out.println("Please pick an activity to play with your pet.");
-//            Scanner scanner = new Scanner(System.in);
-//            String userInputActivity = scanner.nextLine();
-//            try {
-//                if (userInputActivity.equals("Alergare")) {
-//                    System.out.println("You have picked to run with your pet.");
-//                }
-//                if (userInputActivity.equals("Somn")) {
-//                    System.out.println("You have picked to sleep and relax with your pet.");
-//                } else {
-//                    Activity activity = new Activity();
-//                    displayActivities();
-//                    activity.setName(userInputActivity);
-//                    availableActivities[2] = new Activity();
-//                    availableActivities[2] = activity;
-//                    System.out.println("You will " + activity.getName() + "with your pet.");
-//                }
-//            }
-//            catch (InputMismatchException | ArrayIndexOutOfBoundsException e) {
-//                System.out.println("You have entered an invalid name. Please try again");
-//                requireActivity();
-//            }
-//            }
 
 
 
